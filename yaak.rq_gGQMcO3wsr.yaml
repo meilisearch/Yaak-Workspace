@@ -1,0 +1,40 @@
+type: http_request
+model: http_request
+id: rq_gGQMcO3wsr
+createdAt: 2024-05-14T13:02:25
+updatedAt: 2024-05-14T13:02:25
+workspaceId: wk_5KSLhbUKNv
+folderId: fl_jjgRD0VzKV
+authentication:
+  token: ''
+authenticationType: bearer
+body:
+  text: |2-
+     {"queries": [
+            {
+              "indexUid": "books",
+              "q": "Pride and Prejudice"
+            },
+            {
+              "indexUid": "books",
+              "q": "Alice In Wonderland",
+              "attributesToHighlight": ["title"]
+            }
+     ]
+     }
+bodyType: other
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: ''
+  id: null
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: null
+method: POST
+name: Search one or more indexes
+sortPriority: 0.0
+url: ${[url]}/multi-search
+urlParameters: []

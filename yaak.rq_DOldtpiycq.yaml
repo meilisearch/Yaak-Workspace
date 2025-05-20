@@ -1,0 +1,40 @@
+type: http_request
+model: http_request
+id: rq_DOldtpiycq
+createdAt: 2024-05-14T13:02:25
+updatedAt: 2025-05-20T11:56:44.989268
+workspaceId: wk_5KSLhbUKNv
+folderId: fl_unRVNIMB9a
+authentication:
+  token: ${[ master_key ]}
+authenticationType: bearer
+body:
+  text: |-
+    {
+      "name": "Invalid chat key",
+      "description": "Chat about the content of the indexes",
+      "actions": [
+        "search",
+        "chat.get"
+      ],
+      "indexes": [
+        "IAmInvalid"
+      ],
+      "expiresAt": null
+    }
+bodyType: application/json
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: ''
+  id: null
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: null
+method: POST
+name: Create a key
+sortPriority: 0.0
+url: ${[url]}/keys
+urlParameters: []

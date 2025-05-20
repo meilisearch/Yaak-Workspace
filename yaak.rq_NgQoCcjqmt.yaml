@@ -1,0 +1,24 @@
+type: http_request
+model: http_request
+id: rq_NgQoCcjqmt
+createdAt: 2024-05-14T13:02:25
+updatedAt: 2025-05-20T14:25:39.554121
+workspaceId: wk_5KSLhbUKNv
+folderId: fl_bWgjYiW4KL
+authentication:
+  token: ${[ master_key ]}
+authenticationType: bearer
+body:
+  filePath: /Users/clementrenault/Documents/datasets/movies.json
+bodyType: binary
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: tjI6gtZSiZ
+method: POST
+name: Add or replace documents
+sortPriority: 3000.0
+url: ${[url]}/indexes/${[ indexUid ]}/documents
+urlParameters: []

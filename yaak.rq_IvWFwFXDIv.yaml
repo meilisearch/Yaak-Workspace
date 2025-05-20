@@ -1,0 +1,19 @@
+type: http_request
+model: http_request
+id: rq_IvWFwFXDIv
+createdAt: 2024-05-14T13:02:25
+updatedAt: 2025-05-20T14:26:01.172779
+workspaceId: wk_5KSLhbUKNv
+folderId: fl_bWgjYiW4KL
+authentication:
+  token: ''
+authenticationType: bearer
+body: {}
+bodyType: null
+description: ''
+headers: []
+method: DELETE
+name: Delete all documents
+sortPriority: 8000.0
+url: ${[url]}/indexes/${[ indexUid ]}/documents
+urlParameters: []

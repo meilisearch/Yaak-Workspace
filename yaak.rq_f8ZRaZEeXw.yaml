@@ -1,0 +1,24 @@
+type: http_request
+model: http_request
+id: rq_f8ZRaZEeXw
+createdAt: 2024-05-14T13:02:25
+updatedAt: 2025-05-20T14:25:46.513944
+workspaceId: wk_5KSLhbUKNv
+folderId: fl_bWgjYiW4KL
+authentication:
+  token: ''
+authenticationType: bearer
+body:
+  text: "[\n  {\n\t\"id\": 2,\n\t\"author\": \"J. Austen\",\n\t\"date\": \"1813\"\n  }\n]"
+bodyType: application/json
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: null
+method: PUT
+name: Add or update documents
+sortPriority: 4000.0
+url: ${[url]}/indexes/${[ indexUid ]}/documents
+urlParameters: []

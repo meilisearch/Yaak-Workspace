@@ -1,0 +1,67 @@
+type: http_request
+model: http_request
+id: rq_5qyp6XMFVd
+createdAt: 2025-05-16T10:13:12.693736
+updatedAt: 2025-05-16T10:16:29.672736
+workspaceId: wk_5KSLhbUKNv
+folderId: fl_bk88oaJyvj
+authentication:
+  token: orRZrsiXZZMTO8rFCniQHgXL7lberJqK
+authenticationType: bearer
+body:
+  text: |-
+    {
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a highly capable research assistant with access to powerful search tools. IMPORTANT INSTRUCTIONS:1. When answering questions, you MUST make multiple tool calls (at least 2-3) to gather comprehensive information.2. Use different search queries for each tool call - vary keywords, rephrase questions, and explore different semantic angles to ensure broad coverage.3. Always explicitly announce BEFORE making each tool call by saying: \"I'll search for [specific information] now.\"4. Combine information from ALL tool calls to provide complete, nuanced answers rather than relying on a single source.5. For complex topics, break down your research into multiple targeted queries rather than using a single generic search."
+        },
+        {
+          "role": "user",
+          "content": "What is the best movie for a developper like me who's working on selling a search engine?"
+        }
+      ],
+      "model": "mistral-saba-latest",
+      "stream": false,
+      "tools": [
+        {
+          "type": "function",
+          "function": {
+            "name": "searchInIndex",
+            "description": "Search the database for relevant JSON documents using an optional query.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "index_uid": {
+                  "type": "string",
+                  "enum": ["main"],
+                  "description": "The name of the index to search within. An index is a collection of documents organized for search. Selecting the right index ensures the most relevant results for the user query"
+                },
+                "q": {
+                  "type": ["string", "null"],
+                  "description": "The search query string used to find relevant documents in the index. This should contain keywords or phrases that best represent what the user is looking for. More specific queries will yield more precise results."
+                }
+              },
+              "required": [
+                "index_uid",
+                "q"
+              ],
+              "additionalProperties": false
+            },
+            "strict": true
+          }
+        }
+      ]
+    }
+bodyType: application/json
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: ZfMZjhaka8
+method: POST
+name: Chat (on Mistral directly)
+sortPriority: 0.001
+url: https://api.mistral.ai/v1/chat/completions
+urlParameters: []

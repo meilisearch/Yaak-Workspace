@@ -1,0 +1,20 @@
+type: http_request
+model: http_request
+id: rq_LqpcZVpB62
+createdAt: 2025-05-15T14:31:42.302151
+updatedAt: 2025-05-15T14:32:13.870269
+workspaceId: wk_5KSLhbUKNv
+folderId: fl_IHA8TwRJ1F
+authentication:
+  token: ${[ master_key ]}
+authenticationType: bearer
+body:
+  text: ''
+bodyType: null
+description: ''
+headers: []
+method: GET
+name: Get chat settings
+sortPriority: 0.0
+url: ${[url]}/settings/chat
+urlParameters: []

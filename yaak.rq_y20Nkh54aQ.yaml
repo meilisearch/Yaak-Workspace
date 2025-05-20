@@ -1,0 +1,19 @@
+type: http_request
+model: http_request
+id: rq_y20Nkh54aQ
+createdAt: 2024-05-14T13:02:25
+updatedAt: 2024-05-14T13:02:25
+workspaceId: wk_5KSLhbUKNv
+folderId: fl_iuQAtQkSr1
+authentication:
+  token: ''
+authenticationType: bearer
+body: {}
+bodyType: null
+description: ''
+headers: []
+method: GET
+name: Get all experimental features
+sortPriority: 0.0
+url: ${[url]}/experimental-features
+urlParameters: []

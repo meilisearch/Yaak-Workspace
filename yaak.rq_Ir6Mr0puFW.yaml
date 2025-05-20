@@ -1,0 +1,19 @@
+type: http_request
+model: http_request
+id: rq_Ir6Mr0puFW
+createdAt: 2024-05-14T13:02:25
+updatedAt: 2024-05-14T13:02:25
+workspaceId: wk_5KSLhbUKNv
+folderId: fl_ucACskAEhL
+authentication:
+  token: ''
+authenticationType: bearer
+body: {}
+bodyType: null
+description: ''
+headers: []
+method: GET
+name: Health
+sortPriority: 0.0
+url: ${[url]}/health
+urlParameters: []

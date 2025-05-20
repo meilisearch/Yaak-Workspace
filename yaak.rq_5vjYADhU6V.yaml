@@ -1,0 +1,35 @@
+type: http_request
+model: http_request
+id: rq_5vjYADhU6V
+createdAt: 2024-05-14T13:02:25
+updatedAt: 2025-05-20T14:25:35.652060
+workspaceId: wk_5KSLhbUKNv
+folderId: fl_bWgjYiW4KL
+authentication:
+  token: ${[ api_key ]}
+authenticationType: bearer
+body: {}
+bodyType: null
+description: ''
+headers: []
+method: GET
+name: Get documents with GET
+sortPriority: 2000.0
+url: ${[url]}/indexes/${[ indexUid ]}/documents
+urlParameters:
+- enabled: false
+  name: fields
+  value: rkey
+  id: fYnYPMefZu
+- enabled: false
+  name: filter
+  value: langs EXISTS
+  id: RBkEjX5M22
+- enabled: false
+  name: filter
+  value: likes > 0
+  id: MdPZqP7ZgE
+- enabled: true
+  name: ''
+  value: ''
+  id: JyDYJ2Hmpw

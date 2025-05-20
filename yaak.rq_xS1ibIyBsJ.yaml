@@ -1,0 +1,19 @@
+type: http_request
+model: http_request
+id: rq_xS1ibIyBsJ
+createdAt: 2024-05-14T13:02:25
+updatedAt: 2025-05-20T14:27:08.263568
+workspaceId: wk_5KSLhbUKNv
+folderId: fl_IHA8TwRJ1F
+authentication:
+  token: ${[ master_key ]}
+authenticationType: bearer
+body: {}
+bodyType: null
+description: ''
+headers: []
+method: GET
+name: Get all settings
+sortPriority: 1000.0
+url: ${[url]}/indexes/${[ indexUid ]}/settings
+urlParameters: []

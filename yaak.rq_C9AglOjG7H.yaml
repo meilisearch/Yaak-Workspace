@@ -1,0 +1,19 @@
+type: http_request
+model: http_request
+id: rq_C9AglOjG7H
+createdAt: 2024-05-14T13:02:25
+updatedAt: 2024-06-13T18:07:13
+workspaceId: wk_5KSLhbUKNv
+folderId: fl_us1PpcnmkR
+authentication:
+  token: ${[ master_key ]}
+authenticationType: bearer
+body: {}
+bodyType: null
+description: ''
+headers: []
+method: POST
+name: Create a dump
+sortPriority: 0.0
+url: ${[url]}/dumps
+urlParameters: []

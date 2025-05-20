@@ -1,0 +1,59 @@
+type: http_request
+model: http_request
+id: rq_kvgCmMRb4K
+createdAt: 2024-12-24T16:11:43
+updatedAt: 2025-05-20T19:48:22.451737
+workspaceId: wk_5KSLhbUKNv
+folderId: fl_x1VksTFIYK
+authentication:
+  token: ${[ apiKey ]}
+authenticationType: bearer
+body: {}
+bodyType: null
+description: ''
+headers: []
+method: GET
+name: Get all batches
+sortPriority: 0.0
+url: ${[url]}/batches
+urlParameters:
+- enabled: false
+  name: types
+  value: settingsUpdate
+  id: wFg2Jp0ij5
+- enabled: false
+  name: types
+  value: documentAdditionOrUpdate
+  id: AtIFsE8NYS
+- enabled: false
+  name: statuses
+  value: processing
+  id: itE3mAnDdg
+- enabled: false
+  name: statuses
+  value: enqueued
+  id: ernBmc6W3D
+- enabled: false
+  name: statuses
+  value: failed
+  id: AA3dDtr6VP
+- enabled: false
+  name: statuses
+  value: succeeded
+  id: tvxa4DRpg6
+- enabled: true
+  name: limit
+  value: '3'
+  id: bSr8jvquHX
+- enabled: false
+  name: from
+  value: '12828'
+  id: Q3IeptFz08
+- enabled: false
+  name: indexUids
+  value: ${[ indexUid ]}
+  id: hVFdhdk3e5
+- enabled: true
+  name: ''
+  value: ''
+  id: MWeVFGIhUj

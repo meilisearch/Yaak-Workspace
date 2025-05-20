@@ -1,0 +1,35 @@
+type: http_request
+model: http_request
+id: rq_XI3wy5YyY1
+createdAt: 2024-05-14T13:02:25
+updatedAt: 2025-05-20T14:26:11.549098
+workspaceId: wk_5KSLhbUKNv
+folderId: fl_UIJWpqs8L6
+authentication:
+  token: ${[ api_key ]}
+authenticationType: bearer
+body:
+  text: |-
+    {
+      "q": "index data overview"
+    }
+bodyType: application/json
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: null
+- enabled: false
+  name: Accept-Encoding
+  value: gzip
+  id: null
+- enabled: true
+  name: ''
+  value: ''
+  id: null
+method: POST
+name: Search in index
+sortPriority: 0.0
+url: ${[url]}/indexes/${[ indexUid ]}/search
+urlParameters: []

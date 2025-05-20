@@ -1,0 +1,28 @@
+type: http_request
+model: http_request
+id: rq_rpthiRUtY2
+createdAt: 2024-05-14T13:02:25
+updatedAt: 2024-12-17T21:12:27
+workspaceId: wk_5KSLhbUKNv
+folderId: fl_iuQAtQkSr1
+authentication:
+  token: ${[ master_key ]}
+authenticationType: bearer
+body:
+  text: |-
+    {
+        "vectorStore": true,
+        "editDocumentsByFunction": true
+    }
+bodyType: application/json
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: null
+method: PATCH
+name: Configure an experimental feature
+sortPriority: 0.0
+url: ${[url]}/experimental-features
+urlParameters: []

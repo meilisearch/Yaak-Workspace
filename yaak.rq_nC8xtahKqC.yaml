@@ -1,0 +1,28 @@
+type: http_request
+model: http_request
+id: rq_nC8xtahKqC
+createdAt: 2024-05-14T13:02:25
+updatedAt: 2025-05-20T14:26:54.081958
+workspaceId: wk_5KSLhbUKNv
+folderId: fl_nKVQbQfHUx
+authentication:
+  token: ''
+authenticationType: bearer
+body:
+  text: "{\n\t\"primaryKey\": \"title\"\n}"
+bodyType: other
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: ''
+  id: null
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: null
+method: PATCH
+name: Update index
+sortPriority: 0.0
+url: ${[url]}/indexes/${[ indexUid ]}
+urlParameters: []

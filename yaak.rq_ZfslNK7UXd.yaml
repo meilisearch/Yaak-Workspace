@@ -1,0 +1,19 @@
+type: http_request
+model: http_request
+id: rq_ZfslNK7UXd
+createdAt: 2024-05-14T13:02:25
+updatedAt: 2025-05-20T15:32:46.484741
+workspaceId: wk_5KSLhbUKNv
+folderId: fl_unRVNIMB9a
+authentication:
+  token: ${[ apiKey ]}
+authenticationType: bearer
+body: {}
+bodyType: null
+description: ''
+headers: []
+method: GET
+name: Get keys
+sortPriority: 0.0
+url: ${[url]}/keys
+urlParameters: []

@@ -1,0 +1,49 @@
+type: http_request
+model: http_request
+id: rq_l0ClT6vkTp
+createdAt: 2024-05-14T13:02:25
+updatedAt: 2025-05-20T14:27:15.699355
+workspaceId: wk_5KSLhbUKNv
+folderId: fl_IHA8TwRJ1F
+authentication:
+  token: ${[ master_key ]}
+authenticationType: bearer
+body:
+  text: |-
+    {
+      "displayedAttributes": [
+        "*"
+      ],
+      "searchableAttributes": [
+        "title",
+        "overview"
+      ],
+      "filterableAttributes": [
+        "id",
+        "genres",
+        "release_date"
+      ],
+      "sortableAttributes": [
+        "release_date"
+      ],
+      "rankingRules": [
+        "words",
+        "typo",
+        "proximity",
+        "attribute",
+        "sort",
+        "exactness"
+      ]
+    }
+bodyType: application/json
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: null
+method: PATCH
+name: Update settings
+sortPriority: 2000.0
+url: ${[url]}/indexes/${[ indexUid ]}/settings
+urlParameters: []

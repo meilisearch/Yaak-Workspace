@@ -1,0 +1,29 @@
+type: http_request
+model: http_request
+id: rq_KvjUkchhj3
+createdAt: 2024-05-14T13:02:25
+updatedAt: 2025-05-20T14:28:15.903037
+workspaceId: wk_5KSLhbUKNv
+folderId: fl_jrKR4QxBEg
+authentication:
+  token: ''
+authenticationType: bearer
+body:
+  text: |-
+    {
+      "facetQuery": "adventure",
+      "facetName": "genre",
+      "q": "prinec"
+    }
+bodyType: application/json
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: sN2VRgT5se
+method: POST
+name: Search for facet values
+sortPriority: 0.0
+url: ${[url]}/indexes/${[ indexUid ]}/facet-search
+urlParameters: []

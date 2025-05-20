@@ -1,0 +1,27 @@
+type: http_request
+model: http_request
+id: rq_X6qyqYE3tW
+createdAt: 2024-05-14T13:02:25
+updatedAt: 2025-04-01T15:24:24.741481
+workspaceId: wk_5KSLhbUKNv
+folderId: fl_uiZYirmHhG
+authentication:
+  token: ${[ master_key ]}
+authenticationType: bearer
+body: {}
+bodyType: null
+description: ''
+headers: []
+method: DELETE
+name: Delete tasks
+sortPriority: 0.0
+url: ${[url]}/tasks
+urlParameters:
+- enabled: true
+  name: uids
+  value: '*'
+  id: HKrgZQqVp3
+- enabled: true
+  name: ''
+  value: ''
+  id: j62cKcIT02

@@ -1,0 +1,34 @@
+type: http_request
+model: http_request
+id: rq_qaGBfHn4he
+createdAt: 2025-05-13T09:06:16.862976
+updatedAt: 2025-05-20T14:23:47.455448
+workspaceId: wk_5KSLhbUKNv
+folderId: fl_bk88oaJyvj
+authentication:
+  token: ${[ apiKey ]}
+authenticationType: bearer
+body:
+  text: |-
+    {
+      "model": "gpt-3.5-turbo",
+      "stream": true,
+      "messages": [
+        {
+          "role": "user",
+          "content": "What is the best movie for a developper like me who's working on selling a search engine?"
+        }
+      ]
+    }
+bodyType: application/json
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: ZfMZjhaka8
+method: POST
+name: Chat
+sortPriority: 0.0
+url: ${[url]}/chat/completions
+urlParameters: []

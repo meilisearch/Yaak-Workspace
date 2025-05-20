@@ -1,0 +1,23 @@
+type: http_request
+model: http_request
+id: rq_P12O3VQDu3
+createdAt: 2024-05-14T13:02:25
+updatedAt: 2024-06-13T18:06:08
+workspaceId: wk_5KSLhbUKNv
+folderId: fl_unRVNIMB9a
+authentication:
+  token: ${[ master_key ]}
+authenticationType: bearer
+body: {}
+bodyType: null
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: null
+method: DELETE
+name: Delete a key
+sortPriority: 0.0
+url: ${[url]}/keys/e7db7235e0f705ee401ac21baee92bb5a6acde8a1c5e8c9bcfcd817800ce08cd
+urlParameters: []

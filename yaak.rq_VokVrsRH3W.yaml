@@ -1,0 +1,39 @@
+type: http_request
+model: http_request
+id: rq_VokVrsRH3W
+createdAt: 2024-05-14T13:02:25
+updatedAt: 2025-05-17T13:40:49.213174
+workspaceId: wk_5KSLhbUKNv
+folderId: fl_uiZYirmHhG
+authentication:
+  token: ${[ master_key ]}
+authenticationType: bearer
+body: {}
+bodyType: null
+description: ''
+headers: []
+method: POST
+name: Cancel tasks
+sortPriority: 0.0
+url: ${[url]}/tasks/cancel
+urlParameters:
+- enabled: false
+  name: types
+  value: documentEdition
+  id: DPaKPEtbaU
+- enabled: false
+  name: uids
+  value: '3728823'
+  id: gdCnkB7fCI
+- enabled: false
+  name: types
+  value: documentDeletion
+  id: aEfj4k4An5
+- enabled: true
+  name: batchUids
+  value: '719'
+  id: NVCtBPkK7X
+- enabled: true
+  name: ''
+  value: ''
+  id: JHept8f9tr

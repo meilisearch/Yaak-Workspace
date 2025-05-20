@@ -1,0 +1,19 @@
+type: http_request
+model: http_request
+id: rq_tzqJkH3ZiB
+createdAt: 2024-05-14T13:02:25
+updatedAt: 2024-05-31T14:09:38
+workspaceId: wk_5KSLhbUKNv
+folderId: fl_ucACskAEhL
+authentication:
+  token: ${[ master_key ]}
+authenticationType: bearer
+body: {}
+bodyType: null
+description: ''
+headers: []
+method: GET
+name: Global stats
+sortPriority: 0.0
+url: ${[url]}/stats
+urlParameters: []

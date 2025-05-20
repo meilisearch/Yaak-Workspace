@@ -1,0 +1,19 @@
+type: http_request
+model: http_request
+id: rq_j1xAZ1wLpG
+createdAt: 2024-05-14T13:02:25
+updatedAt: 2024-06-13T22:29:45
+workspaceId: wk_5KSLhbUKNv
+folderId: fl_oLvoqK00be
+authentication:
+  token: ${[ master_key ]}
+authenticationType: bearer
+body: {}
+bodyType: null
+description: ''
+headers: []
+method: POST
+name: Create a snapshot
+sortPriority: 0.0
+url: ${[url]}/snapshots
+urlParameters: []

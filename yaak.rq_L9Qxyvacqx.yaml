@@ -1,0 +1,27 @@
+type: http_request
+model: http_request
+id: rq_L9Qxyvacqx
+createdAt: 2024-05-14T13:02:25
+updatedAt: 2025-05-20T14:27:49.168819
+workspaceId: wk_5KSLhbUKNv
+folderId: fl_unRVNIMB9a
+authentication:
+  token: ''
+authenticationType: bearer
+body:
+  text: |-
+    {
+      "description": "Key to add and delete documents, but also to create indexes, in `book` index."
+    }
+bodyType: application/json
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: 67Md2IFxGJ
+method: PATCH
+name: Update a key
+sortPriority: 0.0
+url: ${[url]}/keys/wYZjGJyBcdb0621b97999c233246a8ec0a35d0fcd9a6417ef8ccee0c8978b64b123af2dd
+urlParameters: []

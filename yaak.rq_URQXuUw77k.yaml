@@ -1,0 +1,33 @@
+type: http_request
+model: http_request
+id: rq_URQXuUw77k
+createdAt: 2024-05-14T13:02:25
+updatedAt: 2025-05-20T14:25:31.155152
+workspaceId: wk_5KSLhbUKNv
+folderId: fl_bWgjYiW4KL
+authentication:
+  token: ''
+authenticationType: bearer
+body:
+  text: |-
+    {
+        "filter": "genre = adventure",
+        "fields": ["title"],
+        "limit": 2
+    }
+bodyType: other
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: ''
+  id: null
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: null
+method: POST
+name: Get documents with POST
+sortPriority: 1000.0
+url: ${[url]}/indexes/${[ indexUid ]}/documents/fetch
+urlParameters: []

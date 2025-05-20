@@ -1,0 +1,20 @@
+type: http_request
+model: http_request
+id: rq_gZElJIkrSg
+createdAt: 2024-05-14T13:02:25
+updatedAt: 2025-05-20T14:25:00.480047
+workspaceId: wk_5KSLhbUKNv
+folderId: fl_UIJWpqs8L6
+authentication:
+  token: ${[ apiKey ]}
+authenticationType: bearer
+body:
+  text: ''
+bodyType: null
+description: ''
+headers: []
+method: GET
+name: Search in index
+sortPriority: 0.0
+url: ${[url]}/indexes/${[ indexUid ]}/search
+urlParameters: []

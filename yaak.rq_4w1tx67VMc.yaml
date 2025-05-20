@@ -1,0 +1,27 @@
+type: http_request
+model: http_request
+id: rq_4w1tx67VMc
+createdAt: 2024-05-14T13:02:25
+updatedAt: 2025-05-20T14:25:21.343696
+workspaceId: wk_5KSLhbUKNv
+folderId: fl_bWgjYiW4KL
+authentication:
+  token: ${[ master_key ]}
+authenticationType: bearer
+body: {}
+bodyType: null
+description: ''
+headers:
+- enabled: false
+  name: ''
+  value: ''
+  id: RYs8qiRmrI
+- enabled: true
+  name: ''
+  value: ''
+  id: dM4izxBmuc
+method: GET
+name: Get one document
+sortPriority: 0.0
+url: ${[ indexUid ]}]}xes/${[ indexUid ]}/documents/3llmgj4rzjc2r
+urlParameters: []

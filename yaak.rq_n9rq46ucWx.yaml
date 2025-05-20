@@ -1,0 +1,31 @@
+type: http_request
+model: http_request
+id: rq_n9rq46ucWx
+createdAt: 2024-05-14T13:02:25
+updatedAt: 2024-05-14T13:02:25
+workspaceId: wk_5KSLhbUKNv
+folderId: fl_nKVQbQfHUx
+authentication:
+  token: ''
+authenticationType: bearer
+body:
+  text: |-
+    [
+        { "indexes": ["books", "books_temp"] }
+    ]
+bodyType: other
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: ''
+  id: null
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: null
+method: POST
+name: Swap indexes
+sortPriority: 0.0
+url: ${[url]}/swap-indexes
+urlParameters: []

@@ -1,0 +1,19 @@
+type: http_request
+model: http_request
+id: rq_5fFDqsWJcJ
+createdAt: 2024-05-14T13:02:25
+updatedAt: 2025-05-20T14:26:59.117691
+workspaceId: wk_5KSLhbUKNv
+folderId: fl_nKVQbQfHUx
+authentication:
+  token: ${[ master_key ]}
+authenticationType: bearer
+body: {}
+bodyType: null
+description: ''
+headers: []
+method: DELETE
+name: Delete an index
+sortPriority: 0.0
+url: ${[url]}/indexes/${[ indexUid ]}
+urlParameters: []

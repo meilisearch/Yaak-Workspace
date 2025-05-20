@@ -1,0 +1,75 @@
+type: http_request
+model: http_request
+id: rq_q6JCjhDxJg
+createdAt: 2024-05-14T13:02:25
+updatedAt: 2025-05-20T14:26:31.220637
+workspaceId: wk_5KSLhbUKNv
+folderId: fl_uiZYirmHhG
+authentication:
+  token: ${[ master_key ]}
+authenticationType: bearer
+body: {}
+bodyType: null
+description: ''
+headers: []
+method: GET
+name: Get all tasks
+sortPriority: 0.0
+url: ${[url]}/tasks
+urlParameters:
+- enabled: false
+  name: types
+  value: settingsUpdate
+  id: RMPUT3WFri
+- enabled: false
+  name: types
+  value: documentAdditionOrUpdate
+  id: 5ZBaFwrNcj
+- enabled: false
+  name: types
+  value: documentDeletion
+  id: Buni5BTmCb
+- enabled: false
+  name: types
+  value: taskCancelation
+  id: RNkSmYnGXG
+- enabled: false
+  name: statuses
+  value: processing
+  id: vcmBfsSWan
+- enabled: true
+  name: statuses
+  value: enqueued
+  id: FJZRNg8wCv
+- enabled: false
+  name: statuses
+  value: failed
+  id: vfArReaHXS
+- enabled: false
+  name: statuses
+  value: succeeded
+  id: UcJMKNezkb
+- enabled: true
+  name: limit
+  value: '1'
+  id: cCCMEWbABE
+- enabled: false
+  name: from
+  value: '3612728'
+  id: 3hp2h0ecb3
+- enabled: false
+  name: indexUids
+  value: ${[ indexUid ]}
+  id: mEW3ZiMGjP
+- enabled: false
+  name: batchUids
+  value: '12864'
+  id: 3VUw4bMqUi
+- enabled: false
+  name: from
+  value: '3612760'
+  id: 5v3bNX90dq
+- enabled: true
+  name: ''
+  value: ''
+  id: AbjFDD33iK
