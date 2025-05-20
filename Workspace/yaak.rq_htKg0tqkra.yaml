@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_htKg0tqkra
 createdAt: 2024-05-14T13:02:25
-updatedAt: 2024-05-14T13:08:56
+updatedAt: 2025-05-20T20:36:56.362689
 workspaceId: wk_5KSLhbUKNv
 folderId: fl_ucACskAEhL
 authentication:
@@ -14,6 +14,6 @@ description: ''
 headers: []
 method: GET
 name: Version
-sortPriority: 0.0
+sortPriority: 2000.0
 url: ${[url]}/version
 urlParameters: []
