@@ -16,8 +16,8 @@ Welcome to the Yaak Workspace for Meilisearch v1.0+! This repository provides a 
 ### Setup Instructions
 
 1. Clone this repository:
-   ```
-   git clone https://github.com/your-username/yaak-workspace-meilisearch.git
+   ```bash
+   git clone https://github.com/meilisearch/Yaak-Workspace.git
    ```
 
 2. Open the Yaak app
