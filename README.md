@@ -24,7 +24,7 @@ Welcome to the Yaak Workspace for Meilisearch v1.0+! This repository provides a 
 
 3. Select "Open Existing Workspace" within the Yaak app
 
-4. Navigate to the cloned repository and select it
+4. Navigate to the cloned repository and select the _Workspace_ folder inside
 
 5. You're all set! The workspace is now configured and ready to use with Meilisearch
 
