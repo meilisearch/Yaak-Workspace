@@ -2,25 +2,25 @@ type: http_request
 model: http_request
 id: rq_nC8xtahKqC
 createdAt: 2024-05-14T13:02:25
-updatedAt: 2025-05-20T14:26:54.081958
+updatedAt: 2025-05-21T09:20:34.113634
 workspaceId: wk_5KSLhbUKNv
 folderId: fl_nKVQbQfHUx
 authentication:
-  token: ''
+  token: ${[ secure(value=b64'WUVOQ19lVUUwYXpOdVF3RjRKcDkxSngrWmNGOVY5Z29FamNNNWtSZnhCZWVobnYxZWdCN2FjMEpDM1Yxd3FZNEJHKzlYU3k1UUVqMk9RYm5MclQrU3FnPT0') ]}
 authenticationType: bearer
 body:
-  text: "{\n\t\"primaryKey\": \"title\"\n}"
-bodyType: other
+  text: |-
+    {
+      "uid": "movies",
+      "primaryKey": "id"
+    }
+bodyType: application/json
 description: ''
 headers:
 - enabled: true
   name: Content-Type
-  value: ''
-  id: null
-- enabled: true
-  name: Content-Type
   value: application/json
-  id: null
+  id: yRyeWygfS2
 method: PATCH
 name: Update index
 sortPriority: 0.0

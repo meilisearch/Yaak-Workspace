@@ -2,28 +2,29 @@ type: http_request
 model: http_request
 id: rq_n9rq46ucWx
 createdAt: 2024-05-14T13:02:25
-updatedAt: 2024-05-14T13:02:25
+updatedAt: 2025-05-21T09:27:23.935774
 workspaceId: wk_5KSLhbUKNv
 folderId: fl_nKVQbQfHUx
 authentication:
-  token: ''
+  token: ${[ secure(value=b64'WUVOQ19lVUUwYXpOdVF3RWxSdzhocHo0UXVHWElqSXB3VVd0Rm5RRmcxK2d0NkUvT2JyQjA0YXJ1UXlFQmVoU3pFYmlnUE92VjJ1QlJhNnYvZXRjd2JnPT0') ]}
 authenticationType: bearer
 body:
   text: |-
     [
-        { "indexes": ["books", "books_temp"] }
+      {
+        "indexes": [
+          "movies",
+          "main"
+        ]
+      }
     ]
-bodyType: other
+bodyType: application/json
 description: ''
 headers:
 - enabled: true
   name: Content-Type
-  value: ''
-  id: null
-- enabled: true
-  name: Content-Type
   value: application/json
-  id: null
+  id: 28im2C03uQ
 method: POST
 name: Swap indexes
 sortPriority: 0.0

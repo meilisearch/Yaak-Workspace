@@ -3,7 +3,7 @@ model: environment
 id: ev_GCxKEvCJ1T
 workspaceId: wk_5KSLhbUKNv
 createdAt: 2024-07-15T08:52:18
-updatedAt: 2025-05-20T19:45:51.040394
+updatedAt: 2025-05-21T12:19:28.691958
 name: Localhost
 public: true
 base: false
@@ -14,13 +14,9 @@ variables:
   id: Ibe3bcsrG5
 - enabled: true
   name: indexUid
-  value: ${[ secure(value=b64'WUVOQ19lVUUwYXpOdVF3SEVzeGttYkRWbnpKVFVFK1VKYU9xdkVudTlpbmpPWGgyc2dFMVozbitWbzdKY1MrUFY0MG93Vm5kVEl3PT0') ]}
+  value: ${[ secure(value=b64'WUVOQ19lVUUwYXpOdVF3RmIwdmxaUDM5VkJycWpxUG44WGorb0VFZ0x3TUxWTlg3aEFVK2FxaVBSMXkyemRid0VOczhFd0N2TEZNQT0') ]}
   id: cej3h5hVuq
 - enabled: true
   name: apiKey
-  value: ${[ secure(value=b64'WUVOQ19lVUUwYXpOdVF3R0ErU3RpNHlOVm9QUms4MXljbXptNVFCU2l5MGRSaXVjM2ZqMG5qRXNWVDhxRnZURytkWkJCcmtidVp4YWlZRHNCWlBNd1laT0lDZkNvVVVnQlVmRXpxZXFhU2l1TTBSYzJQak01Z3E5NFVRPT0') ]}
+  value: ${[ secure(value=b64'WUVOQ19lVUUwYXpOdVF3RXBBYmo3a0F6YWdZdmM3MHhxcHV6QjYrYklhV3FQRXpzd3V0ZTdKa3pOMHRLc3VYbWhxUlFCS1dUZnVRPT0') ]}
   id: VkNHEB4CCk
-- enabled: false
-  name: apiKey
-  value: ${[ secure() ]}
-  id: 8VBbeNgDrD

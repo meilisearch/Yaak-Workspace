@@ -6,7 +6,7 @@ updatedAt: 2025-05-20T20:36:56.361114
 workspaceId: wk_5KSLhbUKNv
 folderId: fl_ucACskAEhL
 authentication:
-  token: ${[ master_key ]}
+  token: ${[ apiKey ]}
 authenticationType: bearer
 body: {}
 bodyType: null

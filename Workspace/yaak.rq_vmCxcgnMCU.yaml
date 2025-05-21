@@ -2,29 +2,23 @@ type: http_request
 model: http_request
 id: rq_vmCxcgnMCU
 createdAt: 2025-05-15T14:32:19.419876
-updatedAt: 2025-05-20T19:57:00.253359
+updatedAt: 2025-05-21T12:14:18.808819
 workspaceId: wk_5KSLhbUKNv
 folderId: fl_IHA8TwRJ1F
 authentication:
-  token: ${[ master_key ]}
+  token: ${[ apiKey ]}
 authenticationType: bearer
 body:
   text: |-
     {
       "source": "openai",
-      "apiKey": "${[ secure(value=b64'WUVOQ19lVUUwYXpOdVF3Rms4Z0tkUXpYUnRETEtnSGFPOVFDV0IyZEVNNS9oN2VMT0xqSXZaWlJjTnJHdW5sRHllMzJ4RVhmTmpGSnRNK3V5cWxCcVQ1cUtDMEJhV29DVDl6eFpXN24raEJFeTFhSGlQTC9jd1JkU3VsOUs3RTRacmZjOFNleXBwWlozcmhOOFBYNFh3QlRUTS9PekdpejdGVEFYNHJKcFJRVGQzb0lSYnNaMVh3RkEydUlhcEIzUXVvbDZsTDdWNUJaWFpUMkdBNHRaUUVKdHVhSmtVbWhUMUFId2JaVTN1V3B2a011YzNNQkZQYjNiaWkyOGFOa3B3Ykh5WHdQQ3pEVWxOUExDTWVJdXpBMzlSaGsxbU4wPQ') ]}",
+      "apiKey": "${[ secure(value=b64'WUVOQ19lVUUwYXpOdVF3SGczVHFINlVzNVY3ZFpzRXhsK2JqRGV4MkVaK2xLVmxkYVNJMzJyaG56dVprak9MWE9LVUxRKzNpRDg2QkgyWEgzR29XQi94U0hEN2Iza2pMSGdsVEQ1V2hTc0JSRUIyUkRLS1l0RGwxcEVwQW5wSjk3NnV4d3lldzlxK3pIak9MQS9OOXdaaHJOaGlkcEhwWjVpNHRRWDNDK2tWYmpRVTBVdkJnSlBZS2xEQm9OQ2t1c2lpWGFsTjhkNS9YNVVmTU1PS3g1ZTk4Rm55eXFodGc1c05EbFhYRk1iL3Y0VGozdXA2MmFESEdHdk1zNnEvc3N2UDE0SGhVb21VTFI4M3UzRlc4QzNqakNKRVFjYytzPQ') ]}",
       "prompts": {
         "system": "You are a highly capable research assistant with access to powerful search tools. IMPORTANT INSTRUCTIONS:1. When answering questions, you MUST make multiple tool calls (at least 2-3) to gather comprehensive information.2. Use different search queries for each tool call - vary keywords, rephrase questions, and explore different semantic angles to ensure broad coverage.3. Always explicitly announce BEFORE making each tool call by saying: \"I'll search for [specific information] now.\"4. Combine information from ALL tool calls to provide complete, nuanced answers rather than relying on a single source.5. For complex topics, break down your research into multiple targeted queries rather than using a single generic search.",
         "searchDescription": "Search the database for relevant JSON documents using an optional query.",
         "searchQParam": "The search query string used to find relevant documents in the index. This should contain keywords or phrases that best represent what the user is looking for. More specific queries will yield more precise results.",
         "searchIndexUidParam": "The name of the index to search within. An index is a collection of documents organized for search. Selecting the right index ensures the most relevant results for the user query",
         "preQuery": ""
-      },
-      "indexes": {
-        "main": {
-          "description": "This index contains movies with a title and a description",
-          "documentTemplate": ""
-        }
       }
     }
 bodyType: application/json
@@ -36,6 +30,6 @@ headers:
   id: zm4wjZEJf5
 method: PATCH
 name: Update chat settings
-sortPriority: 0.001
+sortPriority: 2500.0
 url: ${[url]}/settings/chat
 urlParameters: []

@@ -2,16 +2,21 @@ type: http_request
 model: http_request
 id: rq_kvgCmMRb4K
 createdAt: 2024-12-24T16:11:43
-updatedAt: 2025-05-20T19:48:22.451737
+updatedAt: 2025-05-21T10:05:54.514058
 workspaceId: wk_5KSLhbUKNv
 folderId: fl_x1VksTFIYK
 authentication:
   token: ${[ apiKey ]}
 authenticationType: bearer
-body: {}
-bodyType: null
+body:
+  text: ''
+bodyType: application/json
 description: ''
-headers: []
+headers:
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: 7J4uAbZReX
 method: GET
 name: Get all batches
 sortPriority: 0.0
