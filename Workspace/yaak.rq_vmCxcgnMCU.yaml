@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_vmCxcgnMCU
 createdAt: 2025-05-15T14:32:19.419876
-updatedAt: 2025-05-21T14:11:24.564734
+updatedAt: 2025-05-21T14:29:35.167995
 workspaceId: wk_5KSLhbUKNv
 folderId: fl_IHA8TwRJ1F
 authentication:
@@ -12,6 +12,7 @@ body:
   text: |-
     {
       "source": "openai",
+      "baseApi": null,
       "apiKey": "${[ LlmApiKey ]}",
       "prompts": {
         "system": "You are a highly capable research assistant with access to powerful search tools. IMPORTANT INSTRUCTIONS:1. When answering questions, you MUST make multiple tool calls (at least 2-3) to gather comprehensive information.2. Use different search queries for each tool call - vary keywords, rephrase questions, and explore different semantic angles to ensure broad coverage.3. Always explicitly announce BEFORE making each tool call by saying: \"I'll search for [specific information] now.\"4. Combine information from ALL tool calls to provide complete, nuanced answers rather than relying on a single source.5. For complex topics, break down your research into multiple targeted queries rather than using a single generic search.",
