@@ -3,7 +3,7 @@ model: environment
 id: ev_yjMQj8GJWH
 workspaceId: wk_5KSLhbUKNv
 createdAt: 2025-05-20T19:44:30.418914
-updatedAt: 2025-05-20T19:45:54.074973
+updatedAt: 2025-05-21T14:11:34.069548
 name: Cloud
 public: true
 base: false
@@ -21,6 +21,6 @@ variables:
   value: ${[ secure(value=b64'WUVOQ19lVUUwYXpOdVF3RnFhUWJEZjZkbXczbWh5cFpyYVlrMGxFQVl6YkRMbk03Mng4N0hJYStVZmFSdCtGSUZzMTJteVBRV3FFWEJtY2J0UEt6a21TWHl1ek1SVHJvdEVOOGN2SGdGOVQ4YVFtU01mRWI0Z1crVnRnPT0') ]}
   id: VkNHEB4CCk
 - enabled: false
-  name: apiKey
-  value: ${[ secure() ]}
+  name: LlmApiKey
+  value: ${[ secure(value=b64'WUVOQ19lVUUwYXpOdVF3R2dGTlA4cUxLRmR6WnFSTFJHWjMrT1Vyd0ZVbGFaNkFMcnp0cXNwMzluYWR0ZUdqRlZhNktKbW1JYStBclg2WG94UEwwcFVDanptb0Z6SUZmSWZRS2plNFphemtvR3oyckEwSGdYaUhwRVVFRk15ckhyaWgrVm0yS3dkcERyNjFPNzJzVGpWeC9yK1hFaTBzOU9Yd0g0dVQ0WC9hWXdQUWZkVEh5ZExvT3pXYmlkalVLc09Oaz0') ]}
   id: 8VBbeNgDrD

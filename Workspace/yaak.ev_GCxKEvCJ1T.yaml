@@ -3,7 +3,7 @@ model: environment
 id: ev_GCxKEvCJ1T
 workspaceId: wk_5KSLhbUKNv
 createdAt: 2024-07-15T08:52:18
-updatedAt: 2025-05-21T12:19:28.691958
+updatedAt: 2025-05-21T14:11:27.679051
 name: Localhost
 public: true
 base: false
@@ -20,3 +20,7 @@ variables:
   name: apiKey
   value: ${[ secure(value=b64'WUVOQ19lVUUwYXpOdVF3RXBBYmo3a0F6YWdZdmM3MHhxcHV6QjYrYklhV3FQRXpzd3V0ZTdKa3pOMHRLc3VYbWhxUlFCS1dUZnVRPT0') ]}
   id: VkNHEB4CCk
+- enabled: true
+  name: LlmApiKey
+  value: ${[ secure(value=b64'WUVOQ19lVUUwYXpOdVF3RVp2elRqZnpMbksreU54ZDd1NjVMd1ZmTWJ3T2NYUVZTcWozU3A5djNveENmOWxWNDM0bmhNQXF5elJRVG0zb1E0cGhaVmxIdFE0ZS9ZNFYzMXVCZ1kyZzYwdnhNVGpXTFpiZ1JUZXVlQzlXV0lIQ0FIZk1FR0JhaXhlNnQ1a1Z5dUp5UllQTVlvd1JxWm4yMTBhcUgvbkczbTZuTXU2QkpaKzZzUkhoMHhSbjZnZ2o5dGkrND0') ]}
+  id: aTF9z9CQC0

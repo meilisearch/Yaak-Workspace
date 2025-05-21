@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_l0ClT6vkTp
 createdAt: 2024-05-14T13:02:25
-updatedAt: 2025-05-21T13:36:24.396233
+updatedAt: 2025-05-21T14:11:15.870700
 workspaceId: wk_5KSLhbUKNv
 folderId: fl_IHA8TwRJ1F
 authentication:
@@ -11,20 +11,15 @@ authenticationType: bearer
 body:
   text: |-
     {
-      "displayedAttributes": [
-        "*"
-      ],
       "searchableAttributes": [
-        "title",
-        "overview"
+        "name",
+        "description"
       ],
       "filterableAttributes": [
-        "id",
+        "platforms",
+        "players",
         "genres",
-        "release_date"
-      ],
-      "sortableAttributes": [
-        "release_date"
+        "misc"
       ],
       "rankingRules": [
         "words",
@@ -34,15 +29,18 @@ body:
         "sort",
         "exactness"
       ],
+      "sortableAttributes": [
+        "recommendationCount"
+      ],
       "embedders": {
         "openai": {
-          "apiKey": "${[ secure(value=b64'WUVOQ19lVUUwYXpOdVF3SGczVHFINlVzNVY3ZFpzRXhsK2JqRGV4MkVaK2xLVmxkYVNJMzJyaG56dVprak9MWE9LVUxRKzNpRDg2QkgyWEgzR29XQi94U0hEN2Iza2pMSGdsVEQ1V2hTc0JSRUIyUkRLS1l0RGwxcEVwQW5wSjk3NnV4d3lldzlxK3pIak9MQS9OOXdaaHJOaGlkcEhwWjVpNHRRWDNDK2tWYmpRVTBVdkJnSlBZS2xEQm9OQ2t1c2lpWGFsTjhkNS9YNVVmTU1PS3g1ZTk4Rm55eXFodGc1c05EbFhYRk1iL3Y0VGozdXA2MmFESEdHdk1zNnEvc3N2UDE0SGhVb21VTFI4M3UzRlc4QzNqakNKRVFjYytzPQ') ]}",
+          "apiKey": "${[ LlmApiKey ]}",
           "documentTemplate": "A steam game called {{doc.name}} about {{doc.description | truncatewords: 45}}. It has been released in {{doc.releaseDate}} and can be bought for {{doc.price}}."
         }
       },
       "chat": {
         "description": "",
-        "documentTemplate": "A steam game called {{doc.name}} about {{doc.description | truncatewords: 45}}. It has been released in {{doc.releaseDate}} and can be bought for {{doc.price}}."
+        "documentTemplate": "A steam game called {{doc.name}} about {{doc.description | truncatewords: 5}}. It is categorized as {{doc.genres | concat: doc.players | join: \", \"}} and runs on {{doc.platforms | join: \", \"}}. It has been released in {{doc.releaseDate}} and can be bought for {{doc.price}}."
       }
     }
 bodyType: application/json
