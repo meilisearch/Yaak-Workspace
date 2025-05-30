@@ -3,7 +3,7 @@ model: environment
 id: ev_GCxKEvCJ1T
 workspaceId: wk_5KSLhbUKNv
 createdAt: 2024-07-15T08:52:18
-updatedAt: 2025-05-30T10:24:08.395526
+updatedAt: 2025-05-30T13:40:27.294837
 name: Localhost
 public: true
 base: false
@@ -22,7 +22,7 @@ variables:
   id: VkNHEB4CCk
 - enabled: true
   name: chatWorkspace
-  value: ${[ secure(value=b64'WUVOQ19lVUUwYXpOdVF3R0pSVlVBV0FNNFRmbitzM1lKRmdURTZwb01Ra2tGY2tROHlwODVyejZKY3pKR2VUcTVzNnFjbXdWV3BPYkJadz09') ]}
+  value: ${[ secure(value=b64'WUVOQ19lVUUwYXpOdVF3RlowVVFEYUhydzNQWG8rbzAxcEs5dklHbStkZEZ3WkpYRVpKTUt2cUlVbU5maDRrbGtCNDhqOGVqK2p2QnF1Zz09') ]}
   id: wfYn82wD4d
 - enabled: true
   name: LlmApiKey

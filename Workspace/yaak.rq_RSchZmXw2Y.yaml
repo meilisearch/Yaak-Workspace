@@ -2,14 +2,14 @@ type: http_request
 model: http_request
 id: rq_RSchZmXw2Y
 createdAt: 2024-05-14T13:02:25
-updatedAt: 2025-05-30T09:16:25.585756
+updatedAt: 2025-05-30T12:55:42.029112
 workspaceId: wk_5KSLhbUKNv
 folderId: fl_nKVQbQfHUx
 authentication:
   token: ${[ apiKey ]}
 authenticationType: bearer
 body:
-  text: "{\n\t\"uid\": \"caca\"\n}"
+  text: "{\n\t\"uid\": \"${[ indexUid ]}\"\n}"
 bodyType: application/json
 description: ''
 headers:
