@@ -2,9 +2,9 @@ type: http_request
 model: http_request
 id: rq_qaGBfHn4he
 createdAt: 2025-05-13T09:06:16.862976
-updatedAt: 2025-05-30T11:55:47.495760
+updatedAt: 2025-05-30T12:00:16.091575
 workspaceId: wk_5KSLhbUKNv
-folderId: fl_bk88oaJyvj
+folderId: fl_KuVQpDxUSJ
 authentication:
   token: ${[ apiKey ]}
 authenticationType: bearer
@@ -28,7 +28,7 @@ headers:
   value: application/json
   id: ZfMZjhaka8
 method: POST
-name: Chat
+name: Chat completions
 sortPriority: 0.0
 url: ${[url]}/chats/${[ chatWorkspace ]}/chat/completions
 urlParameters: []

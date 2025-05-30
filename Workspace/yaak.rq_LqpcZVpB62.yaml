@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_LqpcZVpB62
 createdAt: 2025-05-15T14:31:42.302151
-updatedAt: 2025-05-30T11:51:28.689160
+updatedAt: 2025-05-30T12:00:09.500887
 workspaceId: wk_5KSLhbUKNv
 folderId: fl_KuVQpDxUSJ
 authentication:
@@ -15,6 +15,6 @@ description: ''
 headers: []
 method: GET
 name: Get chat settings
-sortPriority: 1000.0
+sortPriority: 2000.0
 url: ${[url]}/chats/${[ chatWorkspace ]}/settings
 urlParameters: []
