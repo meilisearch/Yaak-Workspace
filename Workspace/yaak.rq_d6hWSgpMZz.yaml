@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_d6hWSgpMZz
 createdAt: 2024-05-14T13:02:25
-updatedAt: 2025-05-20T14:26:49.706962
+updatedAt: 2025-05-30T09:16:25.583272
 workspaceId: wk_5KSLhbUKNv
 folderId: fl_nKVQbQfHUx
 authentication:
@@ -23,6 +23,6 @@ headers:
   id: null
 method: POST
 name: Create index with primary key
-sortPriority: 0.0
+sortPriority: 1000.0
 url: ${[url]}/indexes
 urlParameters: []

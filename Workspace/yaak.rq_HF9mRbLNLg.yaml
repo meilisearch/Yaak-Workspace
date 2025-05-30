@@ -1,10 +1,10 @@
 type: http_request
 model: http_request
-id: rq_7XSTkVKURP
-createdAt: 2024-05-14T13:02:25
-updatedAt: 2025-05-30T09:16:25.580192
+id: rq_HF9mRbLNLg
+createdAt: 2025-05-30T09:16:14.218139
+updatedAt: 2025-05-30T10:23:51.332325
 workspaceId: wk_5KSLhbUKNv
-folderId: fl_nKVQbQfHUx
+folderId: fl_KuVQpDxUSJ
 authentication:
   token: ${[ apiKey ]}
 authenticationType: bearer
@@ -13,15 +13,15 @@ bodyType: null
 description: ''
 headers: []
 method: GET
-name: List indexes
+name: List chats
 sortPriority: 0.0
-url: ${[url]}/indexes
+url: ${[url]}/chats
 urlParameters:
-- enabled: true
+- enabled: false
   name: limit
   value: '100'
-  id: null
+  id: XSmDdZsjIR
 - enabled: true
   name: ''
   value: ''
-  id: null
+  id: ACty8tcMSf

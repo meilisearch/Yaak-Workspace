@@ -2,10 +2,10 @@ type: workspace
 model: workspace
 id: wk_5KSLhbUKNv
 createdAt: 2024-05-14T13:02:25
-updatedAt: 2025-05-20T20:32:35.954377
+updatedAt: 2025-05-26T12:10:05.177294
 name: Meilisearch v1.0+
 description: The Meilisearch v1.0+ Yaak workspace that exposes the API of the search engine with a compatibility with all versions from the v1.0 up to the latest.
-encryptionKeyChallenge: eUE0azNuQwHM1TL1S9nj7/eJDEtNTUAx7LM47cXyAG4ESMa+mH11ZBkY5d7jJfSUpYFz+jjM29G1Mw07NVtuow3MBFsxdZav8YWMMZG/otkRaKgft0ElAcfyU5pLR4Ky+2o=
+encryptionKeyChallenge: eUE0azNuQwGWiFdw5t7k+xQqZ6rVatNI1/xPy7q9BnKw0HH0ns88wjOww3iSq8bSGzkB8GTzuRJH+BmXCzsyVeCFbcaWIQpru1kgEass0iDczzXQg6NOljOVWEKylJK8Gzw=
 settingValidateCertificates: true
 settingFollowRedirects: true
 settingRequestTimeout: 0

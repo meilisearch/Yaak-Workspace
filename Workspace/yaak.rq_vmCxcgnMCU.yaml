@@ -2,23 +2,23 @@ type: http_request
 model: http_request
 id: rq_vmCxcgnMCU
 createdAt: 2025-05-15T14:32:19.419876
-updatedAt: 2025-05-21T14:29:35.167995
+updatedAt: 2025-05-30T11:51:35.139348
 workspaceId: wk_5KSLhbUKNv
-folderId: fl_IHA8TwRJ1F
+folderId: fl_KuVQpDxUSJ
 authentication:
   token: ${[ apiKey ]}
 authenticationType: bearer
 body:
   text: |-
     {
-      "source": "openai",
+      "source": "openAi",
       "baseApi": null,
       "apiKey": "${[ LlmApiKey ]}",
       "prompts": {
         "system": "You are a highly capable research assistant with access to powerful search tools. IMPORTANT INSTRUCTIONS:1. When answering questions, you MUST make multiple tool calls (at least 2-3) to gather comprehensive information.2. Use different search queries for each tool call - vary keywords, rephrase questions, and explore different semantic angles to ensure broad coverage.3. Always explicitly announce BEFORE making each tool call by saying: \"I'll search for [specific information] now.\"4. Combine information from ALL tool calls to provide complete, nuanced answers rather than relying on a single source.5. For complex topics, break down your research into multiple targeted queries rather than using a single generic search.",
         "searchDescription": "Search the database for relevant JSON documents using an optional query.",
         "searchQParam": "The search query string used to find relevant documents in the index. This should contain keywords or phrases that best represent what the user is looking for. More specific queries will yield more precise results.",
-        "searchIndexUidParam": "The name of the index to search within. An index is a collection of documents organized for search. Selecting the right index ensures the most relevant results for the user query",
+        "searchIndexUidParam": "The name of the index to search within. An index is a collection of documents organized for search. Selecting the right index ensures the most relevant results for the user query. You can access to two indexes: movies, steam. The movies index contains movies with overviews. The steam index contains steam games from the Steam platform with their prices.",
         "preQuery": ""
       }
     }
@@ -30,7 +30,7 @@ headers:
   value: application/json
   id: zm4wjZEJf5
 method: PATCH
-name: Update chat settings
-sortPriority: 2500.0
-url: ${[url]}/settings/chat
+name: Update or create chat settings
+sortPriority: 2000.0
+url: ${[url]}/chats/${[ chatWorkspace ]}/settings
 urlParameters: []

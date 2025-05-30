@@ -3,14 +3,14 @@ model: environment
 id: ev_GCxKEvCJ1T
 workspaceId: wk_5KSLhbUKNv
 createdAt: 2024-07-15T08:52:18
-updatedAt: 2025-05-21T14:11:27.679051
+updatedAt: 2025-05-30T10:24:08.395526
 name: Localhost
 public: true
 base: false
 variables:
 - enabled: true
   name: url
-  value: ${[ secure(value=b64'WUVOQ19lVUUwYXpOdVF3RmNiMVZGZnJuWkpiVXhhcjByYjhLYU9aN0JhN2JjWnZXYjUrUlVJZjBwS29sMlozSzluaUFNSys0ZCtLTEN1QTdxa0tLdHQ4am02VVdycDFsTg') ]}
+  value: ${[ secure(value=b64'WUVOQ19lVUUwYXpOdVF3R0d1b1o2NnRnbEcyKzVGMlk1ZUpLb0JMVmhRem1ReW1XU1owK3FweFJiN3I3a1pkQVFybFo4YW9rM3NFWloxMlJqUlNSc0RxaS81Q2xwMXRVaA') ]}
   id: Ibe3bcsrG5
 - enabled: true
   name: indexUid
@@ -21,6 +21,10 @@ variables:
   value: ${[ secure(value=b64'WUVOQ19lVUUwYXpOdVF3RXBBYmo3a0F6YWdZdmM3MHhxcHV6QjYrYklhV3FQRXpzd3V0ZTdKa3pOMHRLc3VYbWhxUlFCS1dUZnVRPT0') ]}
   id: VkNHEB4CCk
 - enabled: true
+  name: chatWorkspace
+  value: ${[ secure(value=b64'WUVOQ19lVUUwYXpOdVF3R0pSVlVBV0FNNFRmbitzM1lKRmdURTZwb01Ra2tGY2tROHlwODVyejZKY3pKR2VUcTVzNnFjbXdWV3BPYkJadz09') ]}
+  id: wfYn82wD4d
+- enabled: true
   name: LlmApiKey
-  value: ${[ secure(value=b64'WUVOQ19lVUUwYXpOdVF3RVp2elRqZnpMbksreU54ZDd1NjVMd1ZmTWJ3T2NYUVZTcWozU3A5djNveENmOWxWNDM0bmhNQXF5elJRVG0zb1E0cGhaVmxIdFE0ZS9ZNFYzMXVCZ1kyZzYwdnhNVGpXTFpiZ1JUZXVlQzlXV0lIQ0FIZk1FR0JhaXhlNnQ1a1Z5dUp5UllQTVlvd1JxWm4yMTBhcUgvbkczbTZuTXU2QkpaKzZzUkhoMHhSbjZnZ2o5dGkrND0') ]}
+  value: ${[ secure(value=b64'WUVOQ19lVUUwYXpOdVF3Ri9lbngxSGdzYzQ0SHJONjNnRU0vNGZqM3Q0U2VTVk4rRURjK2dVWVFHT3R4R0kxZ21IbXl2VHdYUksrdU0xeGFUN0E5dmE5L2VzWGZUZlErcTZZakVhOWZ6NHhnQkJMamo1SVd0UmRqMjJyNmNEMzZKZkh1V3pFZkxlQUI4MDU0cHVvTmNUa0ZSZjY4VTh1eHFkRjRuaTh4Wi9EUmlOV0NlUTZKQ2o0aERZZVhuTmo1TW84U2RUcHNOd01YRTkxMDYwVi9EQXgwdENNY3dIWG4zZ05IQXc0NUlCVzBVam50eXNlb2R4V3lnZDl2KzNoU2lRRlVqWXBQQTl0U1E2anNsSkJYYklVdjJhNXFXNTQwPQ') ]}
   id: aTF9z9CQC0

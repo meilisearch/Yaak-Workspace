@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_n9rq46ucWx
 createdAt: 2024-05-14T13:02:25
-updatedAt: 2025-05-21T09:27:23.935774
+updatedAt: 2025-05-30T09:16:25.587580
 workspaceId: wk_5KSLhbUKNv
 folderId: fl_nKVQbQfHUx
 authentication:
@@ -27,6 +27,6 @@ headers:
   id: 28im2C03uQ
 method: POST
 name: Swap indexes
-sortPriority: 0.0
+sortPriority: 3000.0
 url: ${[url]}/swap-indexes
 urlParameters: []

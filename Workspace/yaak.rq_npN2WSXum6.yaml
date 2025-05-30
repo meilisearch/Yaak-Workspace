@@ -1,10 +1,10 @@
 type: http_request
 model: http_request
-id: rq_5fFDqsWJcJ
-createdAt: 2024-05-14T13:02:25
-updatedAt: 2025-05-30T09:16:25.588852
+id: rq_npN2WSXum6
+createdAt: 2025-05-30T10:02:54.860811
+updatedAt: 2025-05-30T11:51:39.639757
 workspaceId: wk_5KSLhbUKNv
-folderId: fl_nKVQbQfHUx
+folderId: fl_KuVQpDxUSJ
 authentication:
   token: ${[ apiKey ]}
 authenticationType: bearer
@@ -13,7 +13,7 @@ bodyType: null
 description: ''
 headers: []
 method: DELETE
-name: Delete an index
-sortPriority: 4000.0
-url: ${[url]}/indexes/${[ indexUid ]}
+name: Delete chat settings
+sortPriority: 3000.0
+url: ${[url]}/chats/${[ chatWorkspace ]}/settings
 urlParameters: []

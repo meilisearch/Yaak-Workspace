@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_qaGBfHn4he
 createdAt: 2025-05-13T09:06:16.862976
-updatedAt: 2025-05-20T14:23:47.455448
+updatedAt: 2025-05-30T11:55:47.495760
 workspaceId: wk_5KSLhbUKNv
 folderId: fl_bk88oaJyvj
 authentication:
@@ -16,7 +16,7 @@ body:
       "messages": [
         {
           "role": "user",
-          "content": "What is the best movie for a developper like me who's working on selling a search engine?"
+          "content": "What movies are related to search engine? Only tell one movie name, nothing more. Don't do a sentence."
         }
       ]
     }
@@ -30,5 +30,5 @@ headers:
 method: POST
 name: Chat
 sortPriority: 0.0
-url: ${[url]}/chat/completions
+url: ${[url]}/chats/${[ chatWorkspace ]}/chat/completions
 urlParameters: []
