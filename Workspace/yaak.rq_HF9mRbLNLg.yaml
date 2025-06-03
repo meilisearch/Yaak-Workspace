@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_HF9mRbLNLg
 createdAt: 2025-05-30T09:16:14.218139
-updatedAt: 2025-05-30T12:00:09.498904
+updatedAt: 2025-06-03T15:06:29.684194
 workspaceId: wk_5KSLhbUKNv
 folderId: fl_KuVQpDxUSJ
 authentication:
@@ -14,7 +14,7 @@ description: ''
 headers: []
 method: GET
 name: List chats
-sortPriority: 1000.0
+sortPriority: 0.0
 url: ${[url]}/chats
 urlParameters:
 - enabled: false

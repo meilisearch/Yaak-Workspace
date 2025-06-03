@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_vmCxcgnMCU
 createdAt: 2025-05-15T14:32:19.419876
-updatedAt: 2025-05-30T12:00:09.502499
+updatedAt: 2025-06-03T15:06:29.686368
 workspaceId: wk_5KSLhbUKNv
 folderId: fl_KuVQpDxUSJ
 authentication:
@@ -31,6 +31,6 @@ headers:
   id: zm4wjZEJf5
 method: PATCH
 name: Update or create chat settings
-sortPriority: 3000.0
+sortPriority: 1000.0
 url: ${[url]}/chats/${[ chatWorkspace ]}/settings
 urlParameters: []
