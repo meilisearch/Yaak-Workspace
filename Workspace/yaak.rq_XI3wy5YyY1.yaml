@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_XI3wy5YyY1
 createdAt: 2024-05-14T13:02:25
-updatedAt: 2025-05-20T20:27:55.671800
+updatedAt: 2025-06-10T12:41:34.561455
 workspaceId: wk_5KSLhbUKNv
 folderId: fl_UIJWpqs8L6
 authentication:
@@ -11,8 +11,7 @@ authenticationType: bearer
 body:
   text: |-
     {
-      "q": "beautiful moments",
-      "filter": "likes > 10"
+      "q": "beautiful moments"
     }
 bodyType: application/json
 description: ''

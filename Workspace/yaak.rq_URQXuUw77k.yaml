@@ -2,30 +2,24 @@ type: http_request
 model: http_request
 id: rq_URQXuUw77k
 createdAt: 2024-05-14T13:02:25
-updatedAt: 2025-05-20T14:25:31.155152
+updatedAt: 2025-06-10T12:32:29.058801
 workspaceId: wk_5KSLhbUKNv
 folderId: fl_bWgjYiW4KL
 authentication:
-  token: ''
+  token: ${[ secure(value=b64'WUVOQ19lVUUwYXpOdVF3SGNTdVovZFNUR0pQNU9xUSsyUEJpMlkyYWM0ZkJoK3B4UWIyQy8yQVdyU3JRbEdrOWpyaFpPaTV1cFZ6bWQ0MUIxazNCZ0hBPT0') ]}
 authenticationType: bearer
 body:
   text: |-
     {
-        "filter": "genre = adventure",
-        "fields": ["title"],
-        "limit": 2
+        "filter": "number EXISTS"
     }
-bodyType: other
+bodyType: application/json
 description: ''
 headers:
 - enabled: true
   name: Content-Type
-  value: ''
-  id: null
-- enabled: true
-  name: Content-Type
   value: application/json
-  id: null
+  id: 0FGRaqc0Fk
 method: POST
 name: Get documents with POST
 sortPriority: 1000.0

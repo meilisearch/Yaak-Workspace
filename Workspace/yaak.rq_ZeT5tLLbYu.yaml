@@ -1,8 +1,8 @@
 type: http_request
 model: http_request
-id: rq_HF9mRbLNLg
-createdAt: 2025-05-30T09:16:14.218139
-updatedAt: 2025-06-10T07:51:20.794772
+id: rq_ZeT5tLLbYu
+createdAt: 2025-06-10T07:50:07.082621
+updatedAt: 2025-06-10T07:51:59.020432
 workspaceId: wk_5KSLhbUKNv
 folderId: fl_KuVQpDxUSJ
 authentication:
@@ -13,9 +13,9 @@ bodyType: null
 description: ''
 headers: []
 method: GET
-name: List chats
-sortPriority: 1000.0
-url: ${[url]}/chats
+name: Show chat
+sortPriority: 1750.0
+url: ${[url]}/chats/${[ chatWorkspace ]}
 urlParameters:
 - enabled: false
   name: limit

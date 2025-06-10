@@ -1,8 +1,8 @@
 type: http_request
 model: http_request
-id: rq_npN2WSXum6
-createdAt: 2025-05-30T10:02:54.860811
-updatedAt: 2025-06-10T07:51:20.798161
+id: rq_oDd8coCaJV
+createdAt: 2025-06-10T07:50:47.626115
+updatedAt: 2025-06-10T07:51:57.432900
 workspaceId: wk_5KSLhbUKNv
 folderId: fl_KuVQpDxUSJ
 authentication:
@@ -13,7 +13,7 @@ bodyType: null
 description: ''
 headers: []
 method: DELETE
-name: Reset chat settings
-sortPriority: 3000.0
-url: ${[url]}/chats/${[ chatWorkspace ]}/settings
+name: Delete chat
+sortPriority: 1500.0
+url: ${[url]}/chats/${[ chatWorkspace ]}
 urlParameters: []
