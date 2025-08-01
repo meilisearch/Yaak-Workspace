@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_pqWZ5idpSE
 createdAt: 2024-05-14T13:02:25
-updatedAt: 2025-06-10T08:02:14.942275
+updatedAt: 2025-06-17T08:13:16.439022
 workspaceId: wk_5KSLhbUKNv
 folderId: fl_IHA8TwRJ1F
 authentication:
@@ -17,7 +17,7 @@ headers:
   value: application/json
   id: null
 method: DELETE
-name: Reset index settings
+name: Reset settings
 sortPriority: 2125.0
 url: ${[url]}/indexes/${[ indexUid ]}/settings
 urlParameters: []

@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_nC8xtahKqC
 createdAt: 2024-05-14T13:02:25
-updatedAt: 2025-05-30T09:16:25.591195
+updatedAt: 2025-06-25T10:19:25.723591
 workspaceId: wk_5KSLhbUKNv
 folderId: fl_nKVQbQfHUx
 authentication:
@@ -11,7 +11,6 @@ authenticationType: bearer
 body:
   text: |-
     {
-      "uid": "movies",
       "primaryKey": "id"
     }
 bodyType: application/json
@@ -24,5 +23,5 @@ headers:
 method: PATCH
 name: Update index
 sortPriority: 6000.0
-url: ${[url]}/indexes/${[ indexUid ]}
+url: ${[ url ]}/indexes/${[ indexUid ]}
 urlParameters: []

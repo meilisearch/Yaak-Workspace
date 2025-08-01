@@ -1,0 +1,29 @@
+type: http_request
+model: http_request
+id: rq_kCVebocBbn
+createdAt: 2025-07-09T13:32:06.578973
+updatedAt: 2025-07-09T13:34:15.962112
+workspaceId: wk_5KSLhbUKNv
+folderId: null
+authentication:
+  token: ${[ apiKey ]}
+authenticationType: bearer
+body:
+  text: |-
+    {
+      "url": "https://ms-fe8fa1f41841-103.fra.meilisearch.io",
+      "apiKey": "ff174d0130f7b90c6f53844751a0cda7500f69b6",
+      "payloadSize": "10MiB"
+    }
+bodyType: application/json
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: null
+method: POST
+name: Export
+sortPriority: 13000.0
+url: ${[url]}/export
+urlParameters: []

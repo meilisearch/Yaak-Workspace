@@ -2,9 +2,12 @@ type: folder
 model: folder
 id: fl_x1VksTFIYK
 createdAt: 2024-12-24T16:12:08
-updatedAt: 2024-12-24T16:12:17
+updatedAt: 2025-07-09T13:32:17.238905
 workspaceId: wk_5KSLhbUKNv
 folderId: null
-name: Batches
+authentication: {}
+authenticationType: null
 description: ''
-sortPriority: 2500.0
+headers: []
+name: Batches
+sortPriority: 3000.0

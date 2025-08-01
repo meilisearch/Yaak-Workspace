@@ -2,11 +2,11 @@ type: http_request
 model: http_request
 id: rq_eSJWMPc0mB
 createdAt: 2024-05-14T13:02:25
-updatedAt: 2025-05-30T09:16:25.590096
+updatedAt: 2025-06-17T08:51:41.721316
 workspaceId: wk_5KSLhbUKNv
 folderId: fl_nKVQbQfHUx
 authentication:
-  token: ''
+  token: ${[ secure(value=b64'WUVOQ19lVUUwYXpOdVF3RWwrZUFHUDBlV1hvcG9tZmsrYzBHYTVEeUlLaXo0M1VMYmQ1MmlvcHA0MXdVR3VuSHprcTRPc1dkZ05BK3FXQWczWG5TVDNRPT0') ]}
 authenticationType: bearer
 body: {}
 bodyType: null

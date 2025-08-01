@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_XI3wy5YyY1
 createdAt: 2024-05-14T13:02:25
-updatedAt: 2025-06-10T12:41:34.561455
+updatedAt: 2025-08-01T06:57:37.328910
 workspaceId: wk_5KSLhbUKNv
 folderId: fl_UIJWpqs8L6
 authentication:
@@ -11,7 +11,12 @@ authenticationType: bearer
 body:
   text: |-
     {
-      "q": "beautiful moments"
+      "q": "jouet pour enfant avec des grosses mains",
+      "filter": null,
+      "hybrid": {
+        "embedder": "openai",
+        "semanticRatio": 1.0
+      }
     }
 bodyType: application/json
 description: ''

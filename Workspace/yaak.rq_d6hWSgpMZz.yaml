@@ -2,25 +2,21 @@ type: http_request
 model: http_request
 id: rq_d6hWSgpMZz
 createdAt: 2024-05-14T13:02:25
-updatedAt: 2025-05-30T09:16:25.583272
+updatedAt: 2025-07-21T09:57:12.321248
 workspaceId: wk_5KSLhbUKNv
 folderId: fl_nKVQbQfHUx
 authentication:
-  token: ''
+  token: ${[ secure(value=b64'WUVOQ19lVUUwYXpOdVF3RkM3aUlSeFJ2UkE5U2pvZzc0ZDVmcmxodUhGUDNiYjBLWlJTZDJKSG1NdXA4NFo5K0crYmgrOFZYanIxMVYxTGhsMkVSazRBPT0') ]}
 authenticationType: bearer
 body:
-  text: "{\n\t\"uid\": \"${[ indexUid ]}\",\n\t\"primaryKey\": \"number\"\n}"
-bodyType: other
+  text: "{\n\t\"uid\": \"${[ indexUid ]}\",\n\t\"primaryKey\": \"id\"\n}"
+bodyType: application/json
 description: ''
 headers:
 - enabled: true
   name: Content-Type
-  value: ''
-  id: null
-- enabled: true
-  name: Content-Type
   value: application/json
-  id: null
+  id: 6r4we8NxAA
 method: POST
 name: Create index with primary key
 sortPriority: 1000.0

@@ -2,9 +2,12 @@ type: folder
 model: folder
 id: fl_iuQAtQkSr1
 createdAt: 2024-05-14T13:02:25
-updatedAt: 2024-12-24T16:11:59
+updatedAt: 2025-07-09T13:32:17.246632
 workspaceId: wk_5KSLhbUKNv
 folderId: null
-name: Experimental features
+authentication: {}
+authenticationType: null
 description: ''
+headers: []
+name: Experimental features
 sortPriority: 12000.0

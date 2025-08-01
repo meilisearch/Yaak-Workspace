@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_URQXuUw77k
 createdAt: 2024-05-14T13:02:25
-updatedAt: 2025-06-10T12:32:29.058801
+updatedAt: 2025-07-23T11:40:22.886033
 workspaceId: wk_5KSLhbUKNv
 folderId: fl_bWgjYiW4KL
 authentication:
@@ -11,7 +11,8 @@ authenticationType: bearer
 body:
   text: |-
     {
-        "filter": "number EXISTS"
+      "filter": null,
+      "retrieveVectors": true
     }
 bodyType: application/json
 description: ''

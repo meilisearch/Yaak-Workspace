@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_qaGBfHn4he
 createdAt: 2025-05-13T09:06:16.862976
-updatedAt: 2025-05-30T12:00:16.091575
+updatedAt: 2025-06-10T07:51:20.791311
 workspaceId: wk_5KSLhbUKNv
 folderId: fl_KuVQpDxUSJ
 authentication:
@@ -12,7 +12,7 @@ body:
   text: |-
     {
       "model": "gpt-3.5-turbo",
-      "stream": true,
+      "stream": false,
       "messages": [
         {
           "role": "user",

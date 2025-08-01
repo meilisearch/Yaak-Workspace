@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_l0ClT6vkTp
 createdAt: 2024-05-14T13:02:25
-updatedAt: 2025-05-21T14:11:15.870700
+updatedAt: 2025-07-31T06:28:47.653486
 workspaceId: wk_5KSLhbUKNv
 folderId: fl_IHA8TwRJ1F
 authentication:
@@ -11,15 +11,32 @@ authenticationType: bearer
 body:
   text: |-
     {
+      "displayedAttributes": [
+        "*"
+      ],
       "searchableAttributes": [
-        "name",
-        "description"
+        "title",
+        "description",
+        "shared_with",
+        "counter_parties",
+        "total_agreement_value.amount",
+        "total_agreement_value.currency"
       ],
       "filterableAttributes": [
-        "platforms",
-        "players",
-        "genres",
-        "misc"
+        "organization_id",
+        "user_ids",
+        "agreement_id",
+        "status",
+        "expiration_date",
+        "signature_date",
+        "effective_date",
+        "shared_with",
+        "counter_parties",
+        "total_agreement_value.amount",
+        "total_agreement_value.currency"
+      ],
+      "sortableAttributes": [
+        "_rankingScore"
       ],
       "rankingRules": [
         "words",
@@ -29,18 +46,68 @@ body:
         "sort",
         "exactness"
       ],
-      "sortableAttributes": [
-        "recommendationCount"
-      ],
-      "embedders": {
-        "openai": {
-          "apiKey": "${[ LlmApiKey ]}",
-          "documentTemplate": "A steam game called {{doc.name}} about {{doc.description | truncatewords: 45}}. It has been released in {{doc.releaseDate}} and can be bought for {{doc.price}}."
+      "stopWords": [],
+      "nonSeparatorTokens": [],
+      "separatorTokens": [],
+      "dictionary": [],
+      "synonyms": {},
+      "distinctAttribute": null,
+      "proximityPrecision": "byWord",
+      "typoTolerance": {
+        "enabled": true,
+        "minWordSizeForTypos": {
+          "oneTypo": 5,
+          "twoTypos": 9
+        },
+        "disableOnWords": [],
+        "disableOnAttributes": [],
+        "disableOnNumbers": false
+      },
+      "faceting": {
+        "maxValuesPerFacet": 1000,
+        "sortFacetValuesBy": {
+          "*": "alpha"
         }
       },
+      "pagination": {
+        "maxTotalHits": 10000
+      },
+      "embedders": {
+        "voyage-3.5": {
+          "source": "rest",
+          "apiKey": "pa-apEHI1GmDsyMvnfiTntWgIbt8ZKf9DfuuKK81d_dCBa",
+          "dimensions": 1024,
+          "binaryQuantized": true,
+          "documentTemplate": "{{doc.title}} {{doc.description}}",
+          "documentTemplateMaxBytes": 400,
+          "url": "https://api.voyageai.com/v1/embeddings",
+          "request": {
+            "model": "voyage-3.5",
+            "input": [
+              "{{text}}",
+              "{{..}}"
+            ]
+          },
+          "response": {
+            "data": [
+              {
+                "embedding": "{{embedding}}"
+              },
+              "{{..}}"
+            ]
+          },
+          "headers": {}
+        }
+      },
+      "searchCutoffMs": 1500,
+      "localizedAttributes": null,
+      "facetSearch": true,
+      "prefixSearch": "indexingTime",
       "chat": {
         "description": "",
-        "documentTemplate": "A steam game called {{doc.name}} about {{doc.description | truncatewords: 5}}. It is categorized as {{doc.genres | concat: doc.players | join: \", \"}} and runs on {{doc.platforms | join: \", \"}}. It has been released in {{doc.releaseDate}} and can be bought for {{doc.price}}."
+        "documentTemplate": "{% for field in fields %}{% if field.is_searchable and field.value != nil %}{{ field.name }}: {{ field.value }}\n{% endif %}{% endfor %}",
+        "documentTemplateMaxBytes": 400,
+        "searchParameters": {}
       }
     }
 bodyType: application/json
@@ -49,9 +116,9 @@ headers:
 - enabled: true
   name: Content-Type
   value: application/json
-  id: null
+  id: tVwbtFzxmg
 method: PATCH
-name: Update index settings
+name: Update settings
 sortPriority: 2000.0
-url: ${[url]}/indexes/${[ indexUid ]}/settings
+url: ${[ url ]}/indexes/${[ indexUid ]}/settings
 urlParameters: []

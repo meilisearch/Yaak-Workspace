@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_DOldtpiycq
 createdAt: 2024-05-14T13:02:25
-updatedAt: 2025-05-20T11:56:44.989268
+updatedAt: 2025-07-30T11:57:45.687030
 workspaceId: wk_5KSLhbUKNv
 folderId: fl_unRVNIMB9a
 authentication:
@@ -11,15 +11,12 @@ authenticationType: bearer
 body:
   text: |-
     {
-      "name": "Invalid chat key",
+      "name": "Read-Only Admin Key",
       "description": "Chat about the content of the indexes",
       "actions": [
         "search",
         "chat.get"
-      ],
-      "indexes": [
-        "IAmInvalid"
-      ],
+      ]
       "expiresAt": null
     }
 bodyType: application/json

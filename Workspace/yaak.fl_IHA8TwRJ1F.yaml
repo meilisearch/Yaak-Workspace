@@ -2,9 +2,12 @@ type: folder
 model: folder
 id: fl_IHA8TwRJ1F
 createdAt: 2024-05-14T13:02:25
-updatedAt: 2024-12-24T16:11:59
+updatedAt: 2025-06-17T08:13:00.421805
 workspaceId: wk_5KSLhbUKNv
-folderId: null
-name: Settings
+folderId: fl_nKVQbQfHUx
+authentication: {}
+authenticationType: null
 description: ''
-sortPriority: 6000.0
+headers: []
+name: Settings
+sortPriority: 7000.0

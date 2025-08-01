@@ -2,39 +2,44 @@ type: http_request
 model: http_request
 id: rq_gGQMcO3wsr
 createdAt: 2024-05-14T13:02:25
-updatedAt: 2024-05-14T13:02:25
+updatedAt: 2025-08-01T07:03:15.949438
 workspaceId: wk_5KSLhbUKNv
-folderId: fl_jjgRD0VzKV
+folderId: fl_UIJWpqs8L6
 authentication:
-  token: ''
+  token: ${[ secure(value=b64'WUVOQ19lVUUwYXpOdVF3RmxZQUg2WWVzMnYzZnZtcE95Qm0rWWtxSUkvd0R2UjBqTVRBb09OcUpSQ1FnOGlVQUFIVGFuczBjMUpvZlRqZ3Z0dVEwRUxBPT0') ]}
 authenticationType: bearer
 body:
-  text: |2-
-     {"queries": [
-            {
-              "indexUid": "books",
-              "q": "Pride and Prejudice"
-            },
-            {
-              "indexUid": "books",
-              "q": "Alice In Wonderland",
-              "attributesToHighlight": ["title"]
-            }
-     ]
-     }
-bodyType: other
+  text: |-
+    {
+      "federation": {},
+      "queries": [
+        {
+          "indexUid": "chunks_alpha_prod_le_retour",
+          "q": "Centractuel et super cool",
+          "hybrid": {
+            "embedder": "voyage-3.5",
+            "semanticRatio": 1.0
+          }
+        },
+        {
+          "indexUid": "agreements_alpha_prod_le_retour",
+          "q": "Alice In Wonderland is super interesting",
+          "hybrid": {
+            "embedder": "voyage-3.5",
+            "semanticRatio": 1.0
+          }
+        }
+      ]
+    }
+bodyType: application/json
 description: ''
 headers:
 - enabled: true
   name: Content-Type
-  value: ''
-  id: null
-- enabled: true
-  name: Content-Type
   value: application/json
-  id: null
+  id: eMIXzwszfp
 method: POST
-name: Search one or more indexes
-sortPriority: 0.0
+name: Multi Search on indexes
+sortPriority: 2000.0
 url: ${[url]}/multi-search
 urlParameters: []

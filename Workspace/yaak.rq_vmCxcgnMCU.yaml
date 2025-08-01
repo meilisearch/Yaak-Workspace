@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_vmCxcgnMCU
 createdAt: 2025-05-15T14:32:19.419876
-updatedAt: 2025-06-10T08:57:16.734532
+updatedAt: 2025-07-15T12:46:08.558233
 workspaceId: wk_5KSLhbUKNv
 folderId: fl_KuVQpDxUSJ
 authentication:
@@ -18,7 +18,7 @@ body:
       "apiKey": "${[ LlmApiKey ]}",
       "prompts": {
         "system": "You are a highly capable research assistant with access to powerful search tools. IMPORTANT INSTRUCTIONS:1. When answering questions, you MUST make multiple tool calls (at least 2-3) to gather comprehensive information.2. Use different search queries for each tool call - vary keywords, rephrase questions, and explore different semantic angles to ensure broad coverage.3. Always explicitly announce BEFORE making each tool call by saying: \"I'll search for [specific information] now.\"4. Combine information from ALL tool calls to provide complete, nuanced answers rather than relying on a single source.5. For complex topics, break down your research into multiple targeted queries rather than using a single generic search.",
-        "searchDescription": "Search the database for relevant JSON documents using an optional query.",
+        "searchDescription": "Query: 'best story about Rust before 2018' with year: 2018 (334), 2020 (212), 2021 (210)\r\nlabel: analysis (500), golang (435), javascript (545)\r\ntype: story (760), link (989)\r\nvote: 300 (1), 298 (1), 278 (3)\r\n: {\"q\": \"\", \"filter\": \"category = Rust AND year < 2018 AND vote > 100\"}\r\nQuery: 'A black or green car that can go fast with red brakes'\r\nmaxspeed_kmh: 200 (100), 150 (300), 130 (330)\r\ncolor: black (300), grey (250), red (200), green (50)\r\nbrand: Toyota (300), Renault (100), Jeep (98), Ferrari (50)\r\n: {\"q\": \"red brakes\", \"filter\": \"maxspeed > 150 AND color IN ['black', green]\"}\r\nQuery: 'Superman movie released in 2018 or after' with year: 2018 (334), 2020 (212), 2021 (210)\r\ngenres: Drama (218), Comedy (220), Adventure (210), Fiction (196)\r\n: {\"q\":\"Superman\",\"filter\":\"genres IN [Adventure, Fiction] AND year >= 2018\"}",
         "searchQParam": "The search query string used to find relevant documents in the index. This should contain keywords or phrases that best represent what the user is looking for. More specific queries will yield more precise results.",
         "searchIndexUidParam": "The name of the index to search within. An index is a collection of documents organized for search. Selecting the right index ensures the most relevant results for the user query. You can access to two indexes: movies, steam. The movies index contains movies with overviews. The steam index contains steam games from the Steam platform with their prices."
       }

@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_kvgCmMRb4K
 createdAt: 2024-12-24T16:11:43
-updatedAt: 2025-06-10T12:51:53.115381
+updatedAt: 2025-07-30T21:40:29.206543
 workspaceId: wk_5KSLhbUKNv
 folderId: fl_x1VksTFIYK
 authentication:
@@ -27,8 +27,12 @@ urlParameters:
   value: documentAdditionOrUpdate
   id: AtIFsE8NYS
 - enabled: false
+  name: types
+  value: dumpCreation
+  id: mzqNKe4pXq
+- enabled: false
   name: statuses
-  value: processing
+  value: succeeded
   id: itE3mAnDdg
 - enabled: false
   name: statuses
@@ -42,7 +46,7 @@ urlParameters:
   name: statuses
   value: succeeded
   id: tvxa4DRpg6
-- enabled: false
+- enabled: true
   name: limit
   value: '3'
   id: bSr8jvquHX
@@ -54,7 +58,15 @@ urlParameters:
   name: indexUids
   value: ${[ indexUid ]}
   id: hVFdhdk3e5
+- enabled: false
+  name: batchUids
+  value: '46379'
+  id: MaTDGAsIcs
+- enabled: false
+  name: reverse
+  value: 'true'
+  id: Q70PmatjpP
 - enabled: true
   name: ''
   value: ''
-  id: tvZ9hSc4Hm
+  id: AKgwetuwJ9

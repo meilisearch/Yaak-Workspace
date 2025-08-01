@@ -1,0 +1,32 @@
+type: http_request
+model: http_request
+id: rq_R3iPDyuEdp
+createdAt: 2025-06-17T11:50:28.411182
+updatedAt: 2025-06-17T11:56:07.508072
+workspaceId: wk_5KSLhbUKNv
+folderId: fl_bWgjYiW4KL
+authentication:
+  token: ${[ secure(value=b64'WUVOQ19lVUUwYXpOdVF3SHJGbFRLTXErUGk4NFQxdEZ4aFhWZGtrNUNyYVZQR2ZQZ1p5aDJ5UWxyR1ZNbnhSaEs2NFg2bTlXRCtjUWxURXdjVEpkam9nPT0') ]}
+authenticationType: bearer
+body:
+  text: |-
+    {
+      "context": {
+        "group_id": 2,
+        "group_size": 4
+      },
+      "filter": null,
+      "function": "fn hash(s) {\n    s.to_chars().reduce(|sum| sum + this.to_int(), 0)\n}\n\nif hash(doc.id) % context.group_size == context.group_id {\n    doc = ();\n}"
+    }
+bodyType: application/json
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: null
+method: POST
+name: Edit documents by function
+sortPriority: 4000.001
+url: ${[url]}/indexes/${[ indexUid ]}/documents/edit
+urlParameters: []

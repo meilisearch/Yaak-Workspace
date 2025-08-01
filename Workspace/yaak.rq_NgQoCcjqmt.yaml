@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_NgQoCcjqmt
 createdAt: 2024-05-14T13:02:25
-updatedAt: 2025-06-03T15:05:23.753865
+updatedAt: 2025-06-27T08:34:01.021111
 workspaceId: wk_5KSLhbUKNv
 folderId: fl_bWgjYiW4KL
 authentication:
@@ -14,9 +14,13 @@ bodyType: binary
 description: ''
 headers:
 - enabled: true
+  name: ''
+  value: ''
+  id: fzHicVw2Id
+- enabled: true
   name: Content-Type
   value: application/json
-  id: 96CSW6szyf
+  id: zVaK4hmK0n
 method: POST
 name: Add or replace documents
 sortPriority: 3000.0

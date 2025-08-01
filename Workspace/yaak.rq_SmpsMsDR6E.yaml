@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_SmpsMsDR6E
 createdAt: 2024-05-14T13:02:25
-updatedAt: 2025-04-01T16:01:53.820079
+updatedAt: 2025-07-09T14:36:46.524689
 workspaceId: wk_5KSLhbUKNv
 folderId: fl_uiZYirmHhG
 authentication:
@@ -15,5 +15,5 @@ headers: []
 method: GET
 name: Get one task
 sortPriority: 0.0
-url: ${[url]}/tasks/3612727
+url: ${[url]}/tasks/9223
 urlParameters: []

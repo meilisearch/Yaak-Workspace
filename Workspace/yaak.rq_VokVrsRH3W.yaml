@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_VokVrsRH3W
 createdAt: 2024-05-14T13:02:25
-updatedAt: 2025-05-17T13:40:49.213174
+updatedAt: 2025-06-27T09:32:33.094559
 workspaceId: wk_5KSLhbUKNv
 folderId: fl_uiZYirmHhG
 authentication:
@@ -25,15 +25,15 @@ urlParameters:
   name: uids
   value: '3728823'
   id: gdCnkB7fCI
-- enabled: false
-  name: types
-  value: documentDeletion
-  id: aEfj4k4An5
 - enabled: true
+  name: types
+  value: export
+  id: aEfj4k4An5
+- enabled: false
   name: batchUids
-  value: '719'
+  value: '1521601'
   id: NVCtBPkK7X
 - enabled: true
   name: ''
   value: ''
-  id: JHept8f9tr
+  id: 9fFrZaMQmr

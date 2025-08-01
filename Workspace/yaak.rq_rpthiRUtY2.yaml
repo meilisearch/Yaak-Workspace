@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_rpthiRUtY2
 createdAt: 2024-05-14T13:02:25
-updatedAt: 2025-06-03T16:32:23.138739
+updatedAt: 2025-07-16T07:49:33.545441
 workspaceId: wk_5KSLhbUKNv
 folderId: fl_iuQAtQkSr1
 authentication:
@@ -11,7 +11,9 @@ authenticationType: bearer
 body:
   text: |-
     {
-      "chatCompletions": true
+      "editDocumentsByFunction": true,
+      "chatCompletions": true,
+      "metrics": true
     }
 bodyType: application/json
 description: ''
@@ -22,6 +24,6 @@ headers:
   id: null
 method: PATCH
 name: Configure an experimental feature
-sortPriority: 0.0
+sortPriority: 1000.0
 url: ${[url]}/experimental-features
 urlParameters: []

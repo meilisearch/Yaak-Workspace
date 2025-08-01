@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_q6JCjhDxJg
 createdAt: 2024-05-14T13:02:25
-updatedAt: 2025-05-20T14:26:31.220637
+updatedAt: 2025-07-31T06:36:44.307368
 workspaceId: wk_5KSLhbUKNv
 folderId: fl_uiZYirmHhG
 authentication:
@@ -37,7 +37,7 @@ urlParameters:
   name: statuses
   value: processing
   id: vcmBfsSWan
-- enabled: true
+- enabled: false
   name: statuses
   value: enqueued
   id: FJZRNg8wCv
@@ -51,7 +51,7 @@ urlParameters:
   id: UcJMKNezkb
 - enabled: true
   name: limit
-  value: '1'
+  value: '3'
   id: cCCMEWbABE
 - enabled: false
   name: from
@@ -63,13 +63,17 @@ urlParameters:
   id: mEW3ZiMGjP
 - enabled: false
   name: batchUids
-  value: '12864'
+  value: '9243'
   id: 3VUw4bMqUi
 - enabled: false
   name: from
   value: '3612760'
   id: 5v3bNX90dq
+- enabled: false
+  name: reverse
+  value: 'true'
+  id: umpZFgFjng
 - enabled: true
   name: ''
   value: ''
-  id: AbjFDD33iK
+  id: Tbk96Z8hhR
